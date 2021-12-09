@@ -1,7 +1,7 @@
 import { readFile } from './utils.js'
 
 (async () => {
-	const file = 'first-input.txt'
+	const file = 'inputs/first-input.txt'
 	const data = readFile(file)
 	const parsedData = data.split('\n')
 	const partOne = parsedData.reduce((numberOfIncreased, currentValue, index, array) => {
